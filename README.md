@@ -8,7 +8,7 @@ This is a full-stack web application designed for secure user authentication and
 https://1029846b-a721-4c02-8f3f-7a20937d92b5.e1-us-east-azure.choreoapps.dev
 ```
 
-Built with a **Django** backend and a **React** frontend, it employs **JWT (JSON Web Tokens)** for robust authentication, connects to a managed **PostgreSQL** database, and is deployed via **Choreo** for streamlined integration and cloud hosting.
+Built with a **Django** backend and a **React** frontend, it employs **JWT (JSON Web Tokens)** for authentication, connects to a managed **PostgreSQL** database, and is deployed via **Choreo** for integration and cloud hosting.
 
 ***
 
@@ -37,7 +37,7 @@ Built with a **Django** backend and a **React** frontend, it employs **JWT (JSON
 
 ### Deployment & Integration
 
-- **Choreo**: Both backend and frontend are deployed using Choreo, which seamlessly connects services and manages environment variables and DB connection.
+- **Choreo**: Both backend and frontend are deployed using Choreo, which connects services and manages environment variables and DB connection.
 - **Database**: Leveraged Choreo’s managed PostgreSQL instance to store and retrieve user credentials and data.
 
 ***
@@ -66,7 +66,10 @@ Built with a **Django** backend and a **React** frontend, it employs **JWT (JSON
    - `/api/notes` for note management (protected routes)
 - **React Routing**: Utilizes React Router for handling front-end navigation.
 - **Error Logging**: Comprehensive error handling for login failures and invalid routes.
-
+- **Notes Management**:
+   - When logged in, you can create new notes and delete existing notes.
+   - Notes are stored persistently in the backend database.
+   - All notes you create and delete retain their state even after you log out and log in again (notes are not stored in browser memory, but in the PostgreSQL database).
 ***
 
 ## Getting Started (For Developers)
@@ -89,16 +92,7 @@ Built with a **Django** backend and a **React** frontend, it employs **JWT (JSON
 
 ***
 
-## License
 
-This project is released under the MIT License.
+Made by David Lee.
 
-***
 
-## Author
-
-Made by [your name or username].
-
-***
-
-If you have any questions or want to contribute, feel free to open an issue or pull request on GitHub!
