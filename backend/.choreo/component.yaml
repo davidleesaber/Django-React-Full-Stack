@@ -9,5 +9,18 @@ endpoints:
       networkVisibilities:
         - Project
         - Public
-      security:
-        enabled: false
+      apiDefinition:
+            type: OAS3
+            inline: |
+              openapi: 3.0.0
+              info:
+                title: REST API
+                version: 1.0.0
+              paths:
+                /:
+                  get:
+                    responses:
+                      "200":
+                        description: OK
+              components: {}
+              security: []   # 👈 explicitly disable OAuth2 and API key
