@@ -9,3 +9,5 @@ endpoints:
       networkVisibilities:
         - Project
         - Public
+      security:
+        enabled: false
