@@ -72,26 +72,6 @@ Built with a **Django** backend and a **React** frontend, it employs **JWT (JSON
    - All notes you create and delete retain their state even after you log out and log in again (notes are not stored in browser memory, but in the PostgreSQL database).
 ***
 
-## Getting Started (For Developers)
-
-1. **Clone the repo**  
-   ```
-   git clone https://github.com/yourusername/your-repo-name.git
-   ```
-2. **Backend**  
-   - Configure Django settings for JWT and CORS.
-   - Connect to Choreo-managed PostgreSQL using service environment variables.
-   - Run Django migrations.
-3. **Frontend**  
-   - Install dependencies (`npm install`).
-   - Start with `npm run dev`.
-   - Communicate with backend via configured API endpoints.
-4. **Deployment**  
-   - Deploy both services via Choreo dashboard.
-   - Set necessary secrets/environment variables in Choreo.
-
-***
-
 
 Made by David Lee.
 
